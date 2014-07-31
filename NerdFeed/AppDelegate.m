@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LNGCoursesViewController.h"
+#import "LNGWebViewController.h"
 
 @interface AppDelegate ()
             
@@ -19,6 +21,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    LNGCoursesViewController *cvc = [[LNGCoursesViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc];
+    
+    LNGWebViewController *wvc = [[LNGWebViewController alloc] init];
+    cvc.webViewController = wvc;
+    
+    self.window.rootViewController = masterNav;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

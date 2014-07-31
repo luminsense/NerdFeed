@@ -12,6 +12,7 @@
 		20A31C9D198A320B00F1EE1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A31C9C198A320B00F1EE1B /* Images.xcassets */; };
 		20A31CA9198A320B00F1EE1B /* NerdFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A31CA8198A320B00F1EE1B /* NerdFeedTests.m */; };
 		20A31CB4198A329900F1EE1B /* LNGCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A31CB3198A329900F1EE1B /* LNGCoursesViewController.m */; };
+		20A31CB8198A40F000F1EE1B /* LNGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A31CB7198A40F000F1EE1B /* LNGWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		20A31CA8198A320B00F1EE1B /* NerdFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdFeedTests.m; sourceTree = "<group>"; };
 		20A31CB2198A329900F1EE1B /* LNGCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNGCoursesViewController.h; sourceTree = "<group>"; };
 		20A31CB3198A329900F1EE1B /* LNGCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNGCoursesViewController.m; sourceTree = "<group>"; };
+		20A31CB6198A40F000F1EE1B /* LNGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNGWebViewController.h; sourceTree = "<group>"; };
+		20A31CB7198A40F000F1EE1B /* LNGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNGWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				20A31CB2198A329900F1EE1B /* LNGCoursesViewController.h */,
 				20A31CB3198A329900F1EE1B /* LNGCoursesViewController.m */,
+				20A31CB6198A40F000F1EE1B /* LNGWebViewController.h */,
+				20A31CB7198A40F000F1EE1B /* LNGWebViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 				20A31C9B198A320B00F1EE1B /* AppDelegate.m in Sources */,
 				20A31C98198A320B00F1EE1B /* main.m in Sources */,
 				20A31CB4198A329900F1EE1B /* LNGCoursesViewController.m in Sources */,
+				20A31CB8198A40F000F1EE1B /* LNGWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

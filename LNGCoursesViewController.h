@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class LNGWebViewController;
+
 @interface LNGCoursesViewController : UITableViewController
+
+@property (nonatomic) LNGWebViewController *webViewController;
 
 @end
