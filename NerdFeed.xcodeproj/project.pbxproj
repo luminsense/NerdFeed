@@ -11,6 +11,7 @@
 		20A31C9B198A320B00F1EE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A31C9A198A320B00F1EE1B /* AppDelegate.m */; };
 		20A31C9D198A320B00F1EE1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A31C9C198A320B00F1EE1B /* Images.xcassets */; };
 		20A31CA9198A320B00F1EE1B /* NerdFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A31CA8198A320B00F1EE1B /* NerdFeedTests.m */; };
+		20A31CB4198A329900F1EE1B /* LNGCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A31CB3198A329900F1EE1B /* LNGCoursesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,8 @@
 		20A31CA2198A320B00F1EE1B /* NerdFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NerdFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A31CA7198A320B00F1EE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A31CA8198A320B00F1EE1B /* NerdFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdFeedTests.m; sourceTree = "<group>"; };
+		20A31CB2198A329900F1EE1B /* LNGCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNGCoursesViewController.h; sourceTree = "<group>"; };
+		20A31CB3198A329900F1EE1B /* LNGCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNGCoursesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		20A31C89198A320B00F1EE1B = {
 			isa = PBXGroup;
 			children = (
+				20A31CB5198A32A200F1EE1B /* Controller */,
 				20A31C94198A320B00F1EE1B /* NerdFeed */,
 				20A31CA5198A320B00F1EE1B /* NerdFeedTests */,
 				20A31C93198A320B00F1EE1B /* Products */,
@@ -106,6 +110,15 @@
 				20A31CA7198A320B00F1EE1B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20A31CB5198A32A200F1EE1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20A31CB2198A329900F1EE1B /* LNGCoursesViewController.h */,
+				20A31CB3198A329900F1EE1B /* LNGCoursesViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +220,7 @@
 			files = (
 				20A31C9B198A320B00F1EE1B /* AppDelegate.m in Sources */,
 				20A31C98198A320B00F1EE1B /* main.m in Sources */,
+				20A31CB4198A329900F1EE1B /* LNGCoursesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
