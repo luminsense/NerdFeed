@@ -77,7 +77,10 @@
     // Configure the web view controller
     self.webViewController.title = course[@"title"];
     self.webViewController.url = url;
-    [self.navigationController pushViewController:self.webViewController animated:YES];
+    
+    if (!self.splitViewController) {
+        [self.navigationController pushViewController:self.webViewController animated:YES];
+    }
 }
 
 #pragma mark - Web service
@@ -92,17 +95,20 @@
     // Create task
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
                                                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                         // NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                                         
+                                                         // Parsing JSON
                                                          NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data
                                                                                                                     options:0
                                                                                                                       error:nil];
                                                          self.courses = jsonObject[@"courses"];
-                                                         NSLog(@"%@", self.courses);
+                                                         // NSLog(@"%@", self.courses);
                                                          
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              [self.tableView reloadData];
                                                          });
                                                      }];
+    
+    // Do the task
     [dataTask resume];
 }
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LNGWebViewController : UIViewController
+@interface LNGWebViewController : UIViewController <UISplitViewControllerDelegate>
 
 @property (nonatomic) NSURL *url;
 

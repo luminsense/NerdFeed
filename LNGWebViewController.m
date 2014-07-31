@@ -8,7 +8,7 @@
 
 #import "LNGWebViewController.h"
 
-@interface LNGWebViewController ()
+@interface LNGWebViewController () 
 
 @end
 
@@ -50,6 +50,30 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UISplitViewController Delegate
+
+- (void)splitViewController:(UISplitViewController *)svc
+     willHideViewController:(UIViewController *)aViewController
+          withBarButtonItem:(UIBarButtonItem *)barButtonItem
+       forPopoverController:(UIPopoverController *)pc
+{
+    // If this bar button item does not have a title, it will not appear at all
+    // Note the diff between LNGCoursesViewController and MasterNav
+    barButtonItem.title = @"Courses";
+    
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+
+- (void)splitViewController:(UISplitViewController *)svc
+     willShowViewController:(UIViewController *)aViewController
+  invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    // Remove the bar button item from the navigation item
+    if (barButtonItem == self.navigationItem.leftBarButtonItem) {
+        self.navigationItem.leftBarButtonItem = nil;
+    }
 }
 
 
